@@ -28,13 +28,13 @@
     --bg:           #0a0c0b;
     --bg2:          #0f1210;
     --bg3:          #141a16;
-    --green:        #22c55e;
-    --green-pale:   #1a2b20;
-    --text:         #e2e8e4;
-    --text2:        #8fa89a;
-    --text3:        #4d6057;
-    --border:       rgba(34, 197, 94, 0.12);
-    --border2:      rgba(34, 197, 94, 0.06);
+    --green:        #FF9900;
+    --green-pale:   #2b1802;
+    --text:         #e2e8ea;
+    --text2:        #9ca3af;
+    --text3:        #4b5563;
+    --border:       rgba(255, 153, 0, 0.12);
+    --border2:      rgba(255, 153, 0, 0.06);
     --fd:           'Syne', sans-serif;
     --fm:           'DM Mono', monospace;
 }
@@ -207,8 +207,8 @@ nav {
     position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(34, 197, 94, .025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(34, 197, 94, .025) 1px, transparent 1px);
+        linear-gradient(rgba(255, 153, 0, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 153, 0, .025) 1px, transparent 1px);
     background-size: 60px 60px;
     pointer-events: none;
     z-index: 0;
@@ -220,7 +220,7 @@ nav {
     right: 8%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(34, 197, 94, .05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 153, 0, .05) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -479,6 +479,7 @@ section {
     transition: background .2s;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .cert-card::before {
@@ -607,7 +608,7 @@ section {
 
 /* Highlighted pill — primary skill */
 .pill.hi {
-    border-color: rgba(34, 197, 94, .3);
+    border-color: rgba(255, 153, 0, .3);
     color: var(--green);
 }
 
