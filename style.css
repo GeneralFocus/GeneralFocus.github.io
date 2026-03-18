@@ -927,7 +927,7 @@ section {
 
 .spgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1.2fr;
     gap: 32px;
 }
 
@@ -936,6 +936,8 @@ section {
     background: var(--bg2);
     padding: 32px;
     transition: border-color .2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .spcard:hover {
@@ -957,36 +959,44 @@ section {
     content: '//';
 }
 
-.ti {
-    padding: 14px 0;
-    border-bottom: 1px solid var(--border2);
-    transition: padding-left .2s;
+/* Speaking CTA Styles */
+.sp-cta {
+    justify-content: space-between;
 }
 
-.ti:last-child {
-    border-bottom: none;
+.sp-cta-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.ti:hover {
-    padding-left: 8px;
-}
-
-.tt {
-    font-size: 13px;
+.sp-cta-title {
+    font-family: var(--fd);
+    font-size: 24px;
+    font-weight: 700;
     color: var(--text);
-    margin-bottom: 4px;
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
 
-.tm {
-    font-size: 11px;
-    color: var(--text3);
+.sp-cta-text {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.8;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+/* BuildRoulette Specific Styles */
+.br-card {
+    padding: 40px;
 }
 
 .wl {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 0;
+    padding: 16px 0;
     border-bottom: 1px solid var(--border2);
     text-decoration: none;
     transition: padding-left .2s;
@@ -1000,12 +1010,12 @@ section {
     padding-left: 8px;
 }
 
-.wl:hover .wt {
+.wl:hover .wt, .wl:hover .wa {
     color: var(--green);
 }
 
 .wt {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--text);
     transition: color .2s;
 }
@@ -1013,6 +1023,20 @@ section {
 .wa {
     font-size: 12px;
     color: var(--text3);
+    transition: color .2s;
+}
+
+.br-link {
+    margin-top: 16px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--border);
+}
+
+.br-link .wt {
+    color: var(--green);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
 }
 
 
